@@ -1,20 +1,22 @@
+# whith this program you will shuffle a list of elements of the lenght that you want.
+
 import random
 
 def main():
 
-    llista = []
+    list = []
 
-    n = int(input("Quants elements vols ficar? "))
+    n = int(input("How many elements do you want? "))
     x = 0
 
     while x <= (n-1):
         i = input("Element: ")
-        llista.append(i)
+        list.append(i)
         x += 1
 
-    random.shuffle(llista)
+    random.shuffle(list)
 
-    for y in llista:
+    for y in list:
         print(y)
     main()
 

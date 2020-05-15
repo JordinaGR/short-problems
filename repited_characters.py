@@ -1,6 +1,5 @@
-data = "get_repited_characters"
+data = "4629584697465209834752304986549782364598732648576483756837465874"
 arr = []
-
 for j in data:
 	arr.append(j)
 
@@ -16,18 +15,25 @@ for i in arr:
 	print(i, end=' ')
 print('\n')
 
-print('Repited characters: ')
+print('Repited values: ')
+
+
 def main(arr):
-	if len(arr) <= 1 or len(arr) <= 0:
+	if len(arr) <= 1:
 		quit()
 	elif arr[0] != arr[1]:
 		del arr[0]
 		return main(arr)
 
-	elif arr[0] == arr[1]:
-		print(arr[0], end=', ')
-		del arr[0]
-		del arr[0]
+	else:
+		while arr[0] == arr[1]:
+
+			del arr[0]
+			print(arr[0])
+			del arr[0]
+
+		#print(arr[0], end=', ')
 		return main(arr)
+
 
 main(arr)
