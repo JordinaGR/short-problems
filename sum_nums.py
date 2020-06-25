@@ -1,6 +1,8 @@
-data = [2, 4, 1]
-data1 = [3,1,6]
-sum = 8
+#find all the possible operations to get value "sum" combinating two arrays.
+
+data = [3, 4, 4, 0]
+data1 = [3, 2, 6, 5, 3]
+sum = 6
 
 def findsum(data, data1, sum):
     for i in data:
@@ -8,8 +10,6 @@ def findsum(data, data1, sum):
             x = j+i
             if x == sum:
                 print(f'{i} + {j} = {sum}')
-                quit()
-    else:
-        print('no such operation in this array')
+
 
 findsum(data, data1, sum)
